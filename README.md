@@ -28,7 +28,7 @@ services:
   phpmyadmin:
     depends_on:
       - db
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin # Please use image: phpmyadmin instead of image: phpmyadmin/phpmyadmin for better security 
     restart: always
     environment:
       PMA_HOST : db
