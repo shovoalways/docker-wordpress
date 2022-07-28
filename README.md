@@ -45,7 +45,7 @@ services:
     restart: always
     volumes: ["./:/var/www/html"]
     environment:
-      WORDPRESS_DB_HOST: db:3306 # WordPress Default Port
+      WORDPRESS_DB_HOST: db:3306 # mysql Default Port
       WORDPRESS_DB_USER: wordpress # Same as Database
       WORDPRESS_DB_PASSWORD: wordpres # Same as Database
     networks:
